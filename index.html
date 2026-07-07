@@ -7,7 +7,7 @@
     <title>Politique de confidentialité — Hop</title>
     <meta
       name="description"
-      content="Politique de confidentialité de Hop : 100 % sur ton iPhone, aucune donnée collectée."
+      content="Politique de confidentialité de Hop : 100 % sur ton iPhone, aucune donnée collectée. Privacy policy for Hop: 100% on-device, no data collected."
     />
     <style>
       :root {
@@ -49,6 +49,29 @@
         margin: 0 auto;
         padding: 48px 20px 80px;
       }
+      .lang-switch {
+        display: flex;
+        justify-content: flex-end;
+        gap: 6px;
+        margin-bottom: 16px;
+      }
+      .lang-switch button {
+        appearance: none;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        color: var(--muted);
+        font: inherit;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 5px 14px;
+        border-radius: 999px;
+        cursor: pointer;
+      }
+      .lang-switch button.active {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: #ffffff;
+      }
       .badge {
         display: inline-block;
         padding: 4px 12px;
@@ -60,6 +83,279 @@
         margin-bottom: 20px;
       }
       h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin: 0 0 6px;
+        letter-spacing: -0.02em;
+      }
+      .updated {
+        color: var(--muted);
+        font-size: 14px;
+        margin: 0 0 28px;
+      }
+      .lead {
+        font-size: 18px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 18px 20px;
+        margin: 0 0 32px;
+      }
+      h2 {
+        font-size: 19px;
+        margin: 32px 0 8px;
+        letter-spacing: -0.01em;
+      }
+      p {
+        margin: 0 0 14px;
+        color: var(--text);
+      }
+      section p {
+        color: var(--muted);
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        margin-top: 44px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 13px;
+      }
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="lang-switch" role="group" aria-label="Langue / Language">
+        <button id="btn-fr" type="button" onclick="setLang('fr')">FR</button>
+        <button id="btn-en" type="button" onclick="setLang('en')">EN</button>
+      </div>
+
+      <!-- ============================== FRANÇAIS ============================== -->
+      <div id="lang-fr">
+        <span class="badge">🔒 100 % sur ton appareil</span>
+        <h1>Politique de confidentialité</h1>
+        <p class="updated">
+          Hop — application de nettoyage de photothèque · Dernière mise à jour : 7 juillet 2026
+        </p>
+
+        <p class="lead">
+          Hop est conçue pour respecter ta vie privée par défaut : l’application fonctionne
+          entièrement sur ton iPhone et ne collecte <strong>aucune donnée personnelle</strong>.
+        </p>
+
+        <section>
+          <h2>Tes photos et vidéos</h2>
+          <p>
+            Hop accède à ta photothèque uniquement pour afficher tes médias et supprimer ceux que tu
+            choisis. Ils ne sont jamais envoyés sur un serveur, ni consultés à distance, ni stockés
+            ailleurs que sur ton appareil. Les suppressions passent par le dialogue système d’iOS.
+          </p>
+        </section>
+
+        <section>
+          <h2>Aucun compte</h2>
+          <p>
+            Aucune inscription ni connexion n’est requise. Hop ne te demande pas ton nom, ton email,
+            ni aucune information personnelle.
+          </p>
+        </section>
+
+        <section>
+          <h2>Données conservées en local</h2>
+          <p>
+            Tes choix de tri (garder / supprimer) et tes préférences sont enregistrés uniquement sur
+            ton appareil (stockage local). Ils ne quittent jamais ton iPhone et sont effacés si tu
+            désinstalles l’application.
+          </p>
+        </section>
+
+        <section>
+          <h2>Aucun tracking ni publicité</h2>
+          <p>
+            Hop n’utilise ni traceurs, ni outils d’analyse, ni publicité. Aucune activité n’est
+            mesurée, profilée ni partagée avec des tiers.
+          </p>
+        </section>
+
+        <section>
+          <h2>Achats et abonnements</h2>
+          <p>
+            Les abonnements sont gérés par l’App Store (Apple) et par RevenueCat, qui traitent
+            uniquement l’état de ton abonnement via un identifiant d’achat anonyme — jamais tes
+            photos ni tes données personnelles.
+          </p>
+        </section>
+
+        <section>
+          <h2>Permissions</h2>
+          <p>
+            Hop nécessite un accès complet à la photothèque pour afficher et supprimer tes médias
+            (requis par iOS pour la suppression). Tu peux la révoquer à tout moment dans Réglages →
+            Hop.
+          </p>
+        </section>
+
+        <section>
+          <h2>Conditions d’utilisation</h2>
+          <p>
+            L’utilisation de Hop est régie par le contrat de licence utilisateur type d’Apple (Apple
+            Standard EULA), disponible ici :
+            <a
+              href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+              target="_blank"
+              rel="noopener"
+              >apple.com/legal/…/stdeula</a
+            >.
+          </p>
+        </section>
+
+        <section>
+          <h2>Éditeur &amp; contact</h2>
+          <p>
+            Hop est une application éditée par <strong>Skeymapp</strong>. Pour toute question sur
+            cette politique :
+            <a href="mailto:skeymapp@gmail.com?subject=Hop%20—%20confidentialité"
+              >skeymapp@gmail.com</a
+            >.
+          </p>
+        </section>
+
+        <footer>
+          <p>© 2026 Skeymapp · Tous droits réservés.</p>
+        </footer>
+      </div>
+
+      <!-- ============================== ENGLISH ============================== -->
+      <div id="lang-en" hidden>
+        <span class="badge">🔒 100% on your device</span>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Hop — photo library cleaning app · Last updated: July 7, 2026</p>
+
+        <p class="lead">
+          Hop is private by design: the app runs entirely on your iPhone and collects
+          <strong>no personal data</strong>.
+        </p>
+
+        <section>
+          <h2>Your photos and videos</h2>
+          <p>
+            Hop accesses your photo library only to display your media and delete the ones you
+            choose. They are never uploaded to a server, viewed remotely, or stored anywhere other
+            than your device. Deletions go through the iOS system dialog.
+          </p>
+        </section>
+
+        <section>
+          <h2>No account</h2>
+          <p>
+            No sign-up or login is required. Hop never asks for your name, email address, or any
+            personal information.
+          </p>
+        </section>
+
+        <section>
+          <h2>Data stored locally</h2>
+          <p>
+            Your sorting choices (keep / delete) and preferences are saved only on your device
+            (local storage). They never leave your iPhone and are erased when you uninstall the
+            app.
+          </p>
+        </section>
+
+        <section>
+          <h2>No tracking, no ads</h2>
+          <p>
+            Hop uses no trackers, no analytics tools, and no advertising. No activity is measured,
+            profiled, or shared with third parties.
+          </p>
+        </section>
+
+        <section>
+          <h2>Purchases and subscriptions</h2>
+          <p>
+            Subscriptions are handled by the App Store (Apple) and RevenueCat, which only process
+            your subscription status through an anonymous purchase identifier — never your photos
+            or personal data.
+          </p>
+        </section>
+
+        <section>
+          <h2>Permissions</h2>
+          <p>
+            Hop requires full access to your photo library to display and delete your media
+            (required by iOS for deletion). You can revoke it at any time in Settings → Hop.
+          </p>
+        </section>
+
+        <section>
+          <h2>Terms of use</h2>
+          <p>
+            Use of Hop is governed by Apple’s standard End User License Agreement (Apple Standard
+            EULA), available here:
+            <a
+              href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+              target="_blank"
+              rel="noopener"
+              >apple.com/legal/…/stdeula</a
+            >.
+          </p>
+        </section>
+
+        <section>
+          <h2>Publisher &amp; contact</h2>
+          <p>
+            Hop is published by <strong>Skeymapp</strong>. For any question about this policy:
+            <a href="mailto:skeymapp@gmail.com?subject=Hop%20—%20privacy">skeymapp@gmail.com</a>.
+          </p>
+        </section>
+
+        <footer>
+          <p>© 2026 Skeymapp · All rights reserved.</p>
+        </footer>
+      </div>
+    </main>
+
+    <script>
+      // Sélecteur FR/EN : choix mémorisé (localStorage), défaut = langue du navigateur.
+      var TITLES = {
+        fr: 'Politique de confidentialité — Hop',
+        en: 'Privacy Policy — Hop',
+      };
+      function setLang(l) {
+        var fr = l === 'fr';
+        document.getElementById('lang-fr').hidden = !fr;
+        document.getElementById('lang-en').hidden = fr;
+        document.getElementById('btn-fr').classList.toggle('active', fr);
+        document.getElementById('btn-en').classList.toggle('active', !fr);
+        document.documentElement.lang = l;
+        document.title = TITLES[l];
+        try {
+          localStorage.setItem('hop-lang', l);
+        } catch (e) {}
+      }
+      var saved = null;
+      try {
+        saved = localStorage.getItem('hop-lang');
+      } catch (e) {}
+      var initial =
+        saved === 'fr' || saved === 'en'
+          ? saved
+          : (navigator.language || 'en').toLowerCase().indexOf('fr') === 0
+            ? 'fr'
+            : 'en';
+      setLang(initial);
+    </script>
+  </body>
+</html>
         font-size: 30px;
         line-height: 1.2;
         margin: 0 0 6px;
